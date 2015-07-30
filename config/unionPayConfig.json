@@ -1,0 +1,33 @@
+{
+  "dev":{
+    "version":"5.0.0",
+    "encoding":"utf-8",
+    "frontUrl" :  "http://202.120.40.150:2002/app/unionpay/frontnotify",
+    "backUrl" : "http://202.120.40.150:2002/app/unionpay/notifyPay",
+    "signMethod" : "01",
+    "channelType" : "08",
+    "accessType" : "0",
+    "merId" : "777290058115044",
+    "currencyCode" : "156",
+
+    "publicKey":"",
+    "privateKey":"700000000000001_acp.pfx",
+    "password":"000000",
+    "certId":"124876885185794726986301355951670452718",
+
+    "regist":{
+      "hostname": "101.231.204.80",
+      "port": 5000,
+      "method":"POST",
+      "path":"/gateway/api/appTransReq.do ",
+      "rejectUnauthorized": false
+    },
+    "query":{
+      "hostname": "101.231.204.80",
+      "port": 5000,
+      "method":"POST",
+      "path":"/gateway/api/queryTrans.do",
+      "rejectUnauthorized": false
+    }
+  }
+}
